@@ -3,15 +3,9 @@ import datetime
 import logging
 import os
 import sys
-import requests
-from rich.console import Console
-from rich.live import Live
 from rich.logging import RichHandler
-from rich.progress import BarColumn, Progress, TaskID, TextColumn
-from rich.table import Column
-from requests.adapters import HTTPAdapter
 
-from crawler import Crawler
+from .crawler import Crawler
 
 logger = logging.getLogger("website-crawler-to-pdf")
 logger.setLevel(logging.DEBUG)
