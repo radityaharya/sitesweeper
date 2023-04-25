@@ -15,9 +15,9 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(
         description="Crawl a website and generate a PDF file"
     )
-    parser.add_argument("start-url", type=str, help="The starting URL for the crawl")
+    parser.add_argument("start_url", type=str, help="The starting URL for the crawl")
     parser.add_argument(
-        "--base-path", type=str, default="/", help="The base path for the crawl"
+        "--base_path", type=str, default="/", help="The base path for the crawl"
     )
     parser.add_argument(
         "--output-path",
@@ -28,21 +28,21 @@ if __name__ == "__main__":
         "--depth", type=int, default=100, help="The depth of the crawl (default: 100)"
     )
     parser.add_argument(
-        "--use-sitemap",
+        "--use_sitemap",
         action="store_true",
         help="Use the sitemap.xml file to crawl the website",
     )
     parser.add_argument(
-        "--merge-pdfs", action="store_true", help="Merge all PDF files into one"
+        "--merge_pdfs", action="store_true", help="Merge all PDF files into one"
     )
     parser.add_argument(
-        "--javascript-delay",
+        "--javascript_delay",
         type=int,
         default=3000,
         help="The delay for javascript to load (default: 3000)",
     )
     parser.add_argument(
-        "--page-size",
+        "--page_size",
         type=str,
         default="A4",
         help="The page size for the PDF (default: A4)",
@@ -54,7 +54,7 @@ if __name__ == "__main__":
         help="The encoding for the PDF (default: UTF-8)",
     )
     parser.add_argument(
-        "--log-level", type=str, default="INFO", help="The log level (default: INFO)"
+        "--log_level", type=str, default="INFO", help="The log level (default: INFO)"
     )
     args = parser.parse_args()
 

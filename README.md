@@ -15,6 +15,6 @@ Install sitesweeper with pip
 ## Usage
 
 ```bash
-sitesweeper https://example.com --output-path example
+python3.9 -m sitesweeper https://example.com --output-path example
 ```
 
