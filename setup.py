@@ -10,7 +10,7 @@ else:
 
 setup(
     name="sitesweeper",
-    version="1.0.1",
+    version="1.0.2",
     description="Sitesweeper is a python package to help you automate your web scraping process, outputing pages to a file",
     long_description=long_description,
     long_description_content_type="text/markdown",
